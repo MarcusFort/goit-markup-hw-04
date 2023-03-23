@@ -156,11 +156,21 @@ ul {
 /* HERO */
 
 .hero {
-  background: #2e2f42;
+  max-width: 1440px;
+  height: 600px;
+  /* background: #2e2f42; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .position-h1,
@@ -233,11 +243,26 @@ ul {
   margin-right: 24px;
 }
 
+.position-section-1 .position-icon {
+  padding: 24px 100px;
+  background-color: #f4f4fd;
+  display: flex;
+}
+
+.antenna,
+.astronaut,
+.clock,
+.diagram {
+  width: 59.72px;
+  height: 64px;
+}
+
 .position-section-1 > .li-width:nth-last-child(-n + 1) {
   margin-right: 0px;
 }
 
 .section-1-h3 {
+  margin-top: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -326,8 +351,8 @@ ul {
 .section-3-content {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .section-3-h2 {
@@ -358,6 +383,30 @@ ul {
   color: var(--title-text-color-secondary);
   margin-top: 8px;
   text-align: center;
+}
+
+.section-3-content .position-socialmedia-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.position-socialmedia-icon:nth-child(1n + 1) {
+  margin-right: 24px;
+}
+
+.position-socialmedia-icon:nth-last-child(-n + 1) {
+  margin-right: 0px;
+}
+
+.position-socialmedia-icon:hover {
+  color: #fff;
+  background-color: #404bbf;
 }
 
 /* FOTTER */
@@ -448,6 +497,12 @@ ul {
   margin-bottom: 48px;
 }
 
+.portfolio-product-list .li-width:hover,
+.portfolio-product-list .li-width:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-product-list > .li-width:nth-child(3n + 3) {
   margin-right: 0px;
 }
@@ -473,7 +528,6 @@ ul {
   color: #2e2f42;
   padding-left: 16px;
   padding-right: 16px;
-
 }
 
 .portfolio-product-list-p {
@@ -482,6 +536,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-   padding-left: 16px;
+  padding-left: 16px;
   padding-right: 16px;
 }
