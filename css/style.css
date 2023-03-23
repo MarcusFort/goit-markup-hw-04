@@ -385,28 +385,78 @@ ul {
   text-align: center;
 }
 
-.section-3-content .position-socialmedia-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
+.icon-socialmedia {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 8px;
 }
 
-.position-socialmedia-icon:nth-child(1n + 1) {
-  margin-right: 24px;
-}
-
-.position-socialmedia-icon:nth-last-child(-n + 1) {
+.background-li:nth-last-child(-n + 1) {
   margin-right: 0px;
 }
 
-.position-socialmedia-icon:hover {
+.background-li {
+  width: 40px;
+  height: 40px;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  padding: 12px;
+  margin-right: 24px;
+}
+
+.background-li:hover {
   color: #fff;
   background-color: #404bbf;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-4-h2 {
+font-weight: 700;
+font-size: 36px;
+line-height: 1,11;
+text-align: center;
+letter-spacing: 0.02em;
+color: #2E2F42;
+}
+
+.icon-companies {
+  display: inline-flex;
+
+}
+
+.icon-companies-li {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  margin-top: 72px;
+  margin-right: 24px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+
+.icon-companies-li:hover {
+  border: 1px solid #404BBF;
+border-radius: 4px;
+}
+
+.icon-companies-li:nth-last-child(-n+1) {
+  margin-right: 0px;
+}
+
+.comp-svg {
+  fill: #8e8f99;
+}
+
+.comp-svg:hover {
+  fill: #404BBF;
 }
 
 /* FOTTER */
@@ -448,6 +498,48 @@ ul {
   letter-spacing: 0.02em;
   color: #e7e9fc;
   margin-top: 16px;
+}
+
+.fotter-socialmedia {
+  display: flex;
+  padding-left: 120px;
+  padding-bottom: 132px;
+  flex-direction: column;
+}
+
+.fotter-socialmedia-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1,5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-ul {
+  display: inline-flex;
+}
+
+.fotter-socialmedia-li {
+  width: 40px;
+  height: 40px;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.fotter-socialmedia-li:hover {
+  color: #fff;
+  background-color: #404bbf;
+}
+
+.fotter-socialmedia-li:nth-last-child(-n+1){
+  margin-right: 0px;
+}
+
+.flex {
+  display: inline-flex;
 }
 
 /* PORTFOLIO */
